@@ -5,6 +5,7 @@ Solution for the aptitude test.
 1. 
 
 source code: index.php
+
 Sources used:
 How to make http requests with PHP:
 http://php.net/manual/en/intro.curl.php
@@ -22,6 +23,7 @@ https://developer.linkedin.com/docs/company-pages
 2.
 
 source code: languages.html
+
 Sources used:
 Resourse used to learn how to make http requests via javascript(clientside):
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data
