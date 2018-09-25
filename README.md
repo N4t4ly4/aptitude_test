@@ -46,3 +46,5 @@ languages.html:
 GET	200
 GET	200
 
+Sources used: firefox devtools (network tab)
+
