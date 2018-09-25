@@ -1,0 +1,61 @@
+<!--
+    Author: Natalya Despain
+    Date: 9/24/2018
+    Description:This is a small clientside program that pulls the language names from http://gmc.lingotek.com/language.
+-->
+<!--Basic HTML to format the display-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Languages</title>
+</head>
+<body>
+    <h1>Getting the languages from http://gmc.lingotek.com/language...</h1>
+    <p id='languages'></p>
+    <!--Here is the actual logic that pull the language names.-->
+    <script>
+
+        //create a new XMLHttpRequest object to retrieve the file
+        var fileRequest = new XMLHttpRequest();
+        //create a variable that will hold the languages to display
+        var displayString = '';
+        
+
+        //Function that actually pulls and retrieves contents from the URL
+        function getFile(){
+            //specify the http method to use and url
+            fileRequest.open("GET", "http://gmc.lingotek.com/language");
+            //function to perform when the file from the URL is retrieved (will be preformed after fileRequest.send())
+            fileRequest.onload = function() {
+                //set response to the response of the file retrieval
+                var response = fileRequest.response;
+                //change response from text to JSON
+                responseFormatted = JSON.parse(response);
+                //create array of objects and values from JSON
+                var objectKeys = Object.values(responseFormatted);
+                //loop through the new array of objects/values and set the language values to displayString
+                for (i=0; i<objectKeys.length; i++) {
+                    console.log(objectKeys[i]['language']);
+                    var resultLanguage = objectKeys[i]['language'];
+                    displayString = displayString.concat(resultLanguage,'\n');
+                }
+                //display all language values as text inside a paragraph element
+                document.getElementById('languages').innerHTML = displayString;
+                
+            };
+
+            //send the actual request that was set up above
+            fileRequest.send();
+
+        }
+
+        
+        //preforms the above logic
+        getFile();
+        
+        
+    
+    </script>
+</body>
+</html>
