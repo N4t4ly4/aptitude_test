@@ -39,7 +39,6 @@ https://javascript.info/keys-values-entries
 3.
 
 index.php:
-GET	200
 POST	303 (get access code/login)
 POST	303 (actual info request via API)
 
