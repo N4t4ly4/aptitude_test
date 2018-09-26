@@ -40,11 +40,12 @@ https://javascript.info/keys-values-entries
 
 index.php:
 GET	200
-POST	303
+POST	303 (get access code/login)
+POST	303 (actual info request via API)
 
 languages.html:
-GET	200
-GET	200
+GET	200 (request for JSON formatted file)
+
 
 Sources used: firefox devtools (network tab)
 
