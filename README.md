@@ -31,7 +31,7 @@ https://developer.linkedin.com/docs/company-pages
 
 2.
 
-source code: languages.html
+source code: languages.html (implemented in JavaScript, just used HTML to markup contents)
 
 Sources used:
 Resourse used to learn how to make http requests via javascript(clientside):
