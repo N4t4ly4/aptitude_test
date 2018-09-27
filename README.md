@@ -4,7 +4,7 @@ Solution for the aptitude test.
 
 ************ Pictures of results of source code are called:******************************
 
-Retrieving_a_linkedIn_Status.png
+Retrieving_a_linkedIn_Status_.png
 
 Retrieving_languages.js.png
 
