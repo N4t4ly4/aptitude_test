@@ -3,8 +3,11 @@ Solution for the aptitude test.
 
 
 ************Pictures of results of source code are called:******************************
+
 Retrieving_a_linkedIn_Status.png
+
 Retrieving_languages.js.png
+
 That are included in this repository along with the source code files as well.
 
 
