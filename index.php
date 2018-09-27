@@ -73,7 +73,6 @@ $company_id = null;
                     //initialize curl session to make request to LinkedIn API now that we have an access token
                     $ch = curl_init();
                     //link for actual http request to API
-                    //curl_setopt($ch, CURLOPT_URL,"https://api.linkedin.com/v1/people/~?format=json&oauth2_access_token=".$access_token_value."&format=json");
                     curl_setopt($ch, CURLOPT_URL, $url."&oauth2_access_token=".$access_token_value."&format=json");
                     //set http request type
                     curl_setopt($ch, CURLOPT_POST, 0);
